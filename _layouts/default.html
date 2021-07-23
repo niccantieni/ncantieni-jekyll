@@ -1,0 +1,42 @@
+---
+---
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | Nic Cantieni | EEIT ETHZ</title>
+    <meta name="description" content="Nic Cantieni's personal website at ETHZ.">
+    <meta name="author" content="Nic Cantieni">
+
+    <link rel="icon" href="{{ '/assets/img/logo-n.png' | relative_url }}" type="image/png">
+
+    <link rel="stylesheet" href="{{ '/assets/css/niccantieni.ch.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-jt-mono-font.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-font-settings.css' | relative_url }}">
+</head>
+<body>
+    <div class="centering">
+        {% include nav.html %}
+
+        <main>
+            <!--content start-->
+            {{ content}}
+            <!--content end-->
+            <ul class="contact-list">
+                <li class="contact-list-element" >
+                    <a href="https://github.com/niccantieni" class="contact-list-element"><img class="contact-list-element-img" src="{{ '/assets/img/GitHub-Mark-120px-plus.png' | relative_url }}"></a>
+                </li>
+                <li class="contact-list-element">
+                    <p class="contact-list-element-separator">|</p>
+                </li>
+                <li class="contact-list-element" >
+                    <a href="mailto:ncantieni@ee.ethz.ch" class="contact-list-element"id="mail">@</i>   </a>
+                </li>
+            </ul>
+        </main> 
+        <footer>
+            <p>Made with &#128420; in Graub&uuml;nda and Z&uuml;rich, CH.</p>
+        </footer>
+    </div>
+</body>
+</html>

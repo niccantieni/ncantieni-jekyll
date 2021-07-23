@@ -1,0 +1,63 @@
+---
+---
+
+
+@font-face { 
+    font-family: 'jt-mono-bold';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-Bold.ttf' | relative_url }}) format('truetype'); 
+
+}
+
+
+@font-face { 
+    font-family: 'jt-mono-bold-italic';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-BoldItalic.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-extrabold';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-ExtraBold.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-extrabold-italic';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-ExtraBoldItalic.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-extralight';
+        src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-ExtraLight.ttf' | relative_url }}) format('truetype'); 
+    }
+@font-face { 
+    font-family: 'jt-mono-extralight-italix';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-ExtraLightItalic.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-italic';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-Italic.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-light';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-Light.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-light-italic';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-LightItalic.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-medium';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-Medium.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-medium-italic';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-MediumItalic.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-regular';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-Regular.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-thin';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-Thin.ttf' | relative_url }}) format('truetype'); 
+}
+@font-face { 
+    font-family: 'jt-mono-thin-italic';
+    src: url({{ '/assets/font/jetbrains_mono_ttf/JetBrainsMono-ThinItalic.ttf' | relative_url }}) format('truetype'); 
+}
