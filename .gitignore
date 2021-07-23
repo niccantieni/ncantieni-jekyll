@@ -4,5 +4,4 @@ res/JetBrainsMono-2.225/
 *.ignore
 
 .DS_Store
-_site/
 .jekyll-cache/
