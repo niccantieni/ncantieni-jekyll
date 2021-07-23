@@ -1,27 +1,14 @@
 <nav>
     <ul class="nav-list">
 
-
         {% for item in  site.data.navigation %}
-        <li class="nav-list-element" >
-            <a href="{{ item.link  | relative_url }}" {% if page.url == item.link %} id="nav-list-element-active" {% endif %}>{{ item.name }}</a>
-        </li>
-        <li class="nav-list-element">
-            <p class="nav-list-element-separator">|</p>
-        </li>
-
+            <li class="nav-list-element" >
+                <a href="{{ item.link  | relative_url }}" {% if page.url == item.link %} id="nav-list-element-active" {% endif %}>{{ item.name }}</a>
+            </li>
+            <li class="nav-list-element">
+                <p class="nav-list-element-separator">|</p>
+            </li>
         {% endfor %}
-
-        <!--
-        <li class="nav-list-element" >
-            <a href="../">home</a>
-        </li>
-        <li class="nav-list-element">
-            <p class="nav-list-element-separator">|</p>
-        </li>
-        <li class="nav-list-element">
-            <a href="#" id="nav-list-element-active">DigiTech U</a>
-        </li>
-        -->
+        
     </ul>
 </nav>
