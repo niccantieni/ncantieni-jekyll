@@ -2,3 +2,6 @@ url: "http://n.ethz.ch" # the base hostname & protocol for your site, e.g. http:
 baseurl: "/~ncantieni" # the subpath of your site, e.g. /blog
 title: "Nic Cantieni, ETHZ" # the name of your site, e.g. ACME Corp.
 slide-prefix: ""
+exclude: # excludes certain files from building into the _site
+  - "deploy.sh"
+  - "*.code-workspace"

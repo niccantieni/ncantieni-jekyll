@@ -1,0 +1,35 @@
+.grid-dt-links {
+    text-align: center;
+    background-color: var(--c-darker-grey);
+    grid-column: span 1;
+}
+
+.grid-dt-links-row1 {
+    grid-row: 1 / 2;
+}
+
+.grid-dt-links-row2 {
+    grid-row: 2 / 3;
+}
+
+.grid-dt-links-row3 {
+    grid-row: 3 / 4;
+}
+
+@media screen and (max-width: 992px) {
+    .grid-content.grid-31 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .grid-dt-links-row1 {
+        grid-row: span 1;
+    }
+    
+    .grid-dt-links-row2 {
+        grid-row: span 1;
+    }
+    
+    .grid-dt-links-row3 {
+        grid-row: span 1;
+    }
+}

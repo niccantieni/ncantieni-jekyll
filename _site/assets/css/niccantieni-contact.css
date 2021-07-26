@@ -1,0 +1,41 @@
+.contact-list {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 1em;
+    margin: 0;
+}
+
+.contact-list-element {
+    display: inline-block; 
+}
+
+.contact-list-element-img {
+    height: 1.5em;
+}
+
+.contact-list-element-separator {
+    margin: 0;
+    font-size: 1.75em;
+    font-family: jt-mono-thin;
+}
+
+#twitter-img {
+    height: 1.45em;
+}
+
+#mail {
+    font-size: 1.75em;
+    color: black;
+    position: relative;
+}
+
+#mail:hover {
+    text-decoration: none;
+    color: var(--c-std-link);
+}
+
+
+footer {
+    margin: 0 0 ; 
+    padding: 0 0.5em;
+}

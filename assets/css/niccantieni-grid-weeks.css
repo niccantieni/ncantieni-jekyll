@@ -1,0 +1,5 @@
+.grid-dt-weeks {
+    text-align: center;
+    background-color: var(--c-darker-grey);
+    grid-column: span 1;
+}
