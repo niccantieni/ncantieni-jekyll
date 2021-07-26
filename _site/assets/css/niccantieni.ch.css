@@ -61,3 +61,15 @@ main {
     background-color: var(--c-dark-grey);
     padding: 0.5em 1em;
 }
+
+
+@media screen and (max-width: 992px){
+    main {
+        width: 100%;
+    }
+
+    body {
+        transform: scale(1.2);
+        transform-origin: 0 0;
+     }
+}
