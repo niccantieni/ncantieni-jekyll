@@ -4,22 +4,17 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>{{ page.title }} | Nic Cantieni | EEIT ETHZ</title>
-    <meta name="description" content="Nic Cantieni's personal website at ETHZ.">
-    <meta name="author" content="Nic Cantieni">
+    <title>{{ page.title | append: site.data.params.title-text }}</title>
+    <meta name="description" content="{{ site.data.params.description }}" >
+    <meta name="author" content="{{ site.data.params.author }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="icon" href="{{ '/assets/img/logo-n.png' | relative_url }}" type="image/png">
+    <link rel="icon" href="{{ site.data.params.icon | relative_url }}" type="image/png">
 
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni.ch.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-jt-mono-font.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-font-settings.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-contact.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-nav.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-grids.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-grid-weeks.css' | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/niccantieni-grid-links.css' | relative_url }}">
+    {% for item in site.data.css  %}{% assign url = '/assets/css/' | append: item.URL %}<link rel="stylesheet" href="{{ url | relative_url }}">
+    {% endfor %}
+
 </head>
 <body>
     <div class="centering">
@@ -47,7 +42,7 @@
             -->
         </main> 
         <footer>
-            <p>Made with &#128420; in Graub&uuml;nda and Z&uuml;rich, CH.</p>
+            <p>{{ site.data.params.footer-text }}</p>
         </footer>
     </div>
 </body>
