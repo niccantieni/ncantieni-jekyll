@@ -12,7 +12,11 @@
 
     <link rel="icon" href="{{ site.data.params.icon | relative_url }}" type="image/png">
 
+    <!--global css-->
     {% for item in site.data.css  %}{% assign url = '/assets/css/' | append: item.URL %}<link rel="stylesheet" href="{{ url | relative_url }}">
+    {% endfor %}    
+    <!--custom css for each page-->
+    {% for item in page.css  %}{% assign url = '/assets/css/' | append: item.URL %}<link rel="stylesheet" href="{{ url | relative_url }}">
     {% endfor %}
 
 </head>
