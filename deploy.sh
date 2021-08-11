@@ -10,4 +10,4 @@ git push github master
 #for this to work, one has to init svn from within the directory homepage on remote with the following command: 
 #$ svn checkout https://github.com/niccantieni/ncantieni-jekyll/trunk/_site/ ./
 #svn the remembers the "root master" to be /_site, and any further updates refer to this subdirectory
-ssh ncantieni@slab1.ethz.ch 'cd homepage; svn update; exit;'
+ssh ncantieni@slab2.ethz.ch 'cd homepage; svn update; exit;'
