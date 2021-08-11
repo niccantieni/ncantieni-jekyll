@@ -17,7 +17,7 @@
     <meta name="twitter:site" content="{{ site.data.params.twitter-site }}" />
     <meta name="twitter:title" content="{{ page.card-title }}" />
     <meta name="twitter:description" content="{{ page.card-description }}" />
-    <meta name="twitter:image" content="{{ page.card-image | relative_url }}" />
+    <meta name="twitter:image" content="{{ page.card-image | absolute_url }}" />
 
     <!--opengraph metadata-->
 
@@ -25,7 +25,7 @@
     <meta property="og:title" content="{{ page.card-title }}" />
     <meta property="og:description" content="{{ page.card-description }}" />
     <meta property="og:url" content="{{ "/" | absolute_url }}" />
-    <meta property="og:image" content="{{ page.card-image | relative_url }}" />
+    <meta property="og:image" content="{{ page.card-image | absolute_url }}" />
 
     <!--global css-->
     {% for item in site.data.css  %}{% assign url = '/assets/css/' | append: item.URL %}<link rel="stylesheet" href="{{ url | relative_url }}">
