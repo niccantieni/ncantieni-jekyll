@@ -3,7 +3,7 @@ jekyll build
 #add all changed files to git
 git add .
 #commit
-git commit -am "automated update"
+git commit -m "automated update"
 #push the commits to github
 git push github master
 #ssh into ETHZ, change into homepage directory, update the contents (only pulls changes from /_site), and exit
